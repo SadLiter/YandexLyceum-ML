@@ -10,6 +10,7 @@
 import numpy as np
 import math
 
+
 def regression_metrics(y_true, y_pred):
     y_true = np.array(y_true)
     y_pred = np.array(y_pred)
@@ -19,6 +20,7 @@ def regression_metrics(y_true, y_pred):
     rmse = math.sqrt(mse)
 
     return mse, mae, rmse
+
 
 y_true, y_pred = list(map(float, input().split())), list(map(float, input().split()))
 
